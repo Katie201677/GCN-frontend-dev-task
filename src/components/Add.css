@@ -1,0 +1,11 @@
+.add {
+  background-color: #C30106;
+  height: 250px;
+}
+
+.add--screenshot {
+  height: 230px;
+  width: 100vw;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
