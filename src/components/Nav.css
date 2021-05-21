@@ -1,0 +1,21 @@
+.nav--list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav--list--item {
+  background-color: #0a0a0a;
+  border-bottom: 0.2px solid grey;
+  box-sizing: border-box;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  list-style-type: none;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  text-align: left;
+}
