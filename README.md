@@ -1,7 +1,10 @@
 # Play Sports Network Frontend Development Task
 ## Update to navigation on globalcyclingnetwork.com for mobile view
-I have replicated the GCN homepage with a few tweaks to the navigation as detailed below. Further ideas that I did not have time to implement are also detailed below.  
+I have replicated the GCN homepage with a few tweaks to the navigation as detailed below. Further ideas that I did not have time to implement are also detailed below.
 
+To run: 
+* npm run build
+* npm run deploy
 
 ### Summary of changes
 * Removed the buttons from the top red banner and replaced with text links as the buttons looked a bit crowded.

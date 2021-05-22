@@ -6,7 +6,7 @@ function DisplayVideos() {
   const [videoArray, setVideoArray] = useState();
 
   useEffect(() => {
-    fetch("/videos.json")
+    fetch("./videos.json")
       .then(response => response.json())
       .then(data => setVideoArray(data));
   }, []);

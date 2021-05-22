@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from './Header';
-import Add from './Add';
+import Ad from './Ad';
 import SearchBar from './SearchBar';
 import DisplayVideos from './Videos.js';
 import Nav from './Nav';
@@ -29,7 +29,7 @@ function Page() {
       <Header
         expandNav={expandNav}
       />
-      <Add/>
+      <Ad/>
       <Nav
         isNavExpanded={isNavExpanded}
         isPresentersExpanded={isPresentersExpanded}
