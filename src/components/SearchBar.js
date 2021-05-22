@@ -12,8 +12,8 @@ function SearchBar() {
           <button className="searchBar--button"><FontAwesomeIcon icon="search" /></button>
         </div>
         
-        <select className="searchBar--dropdown">
-          <option selected disabled>Or browse our videos</option>
+        <select defaultValue="0" className="searchBar--dropdown">
+          <option value="0" disabled>Or browse our videos</option>
           <option>GCN Show</option>
           <option>How To</option>
           <option>Maintenance</option>

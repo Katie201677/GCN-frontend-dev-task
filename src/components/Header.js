@@ -5,7 +5,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../assets/GCNLogoTxt.svg';
 
 
-function Header() {
+function Header(props) {
+  
+  const { expandNav } = props;
+
+  const handleClick = () => {
+    if (typeof(expandNav) === 'function') {
+      expandNav();
+    }
+  }
+  
   return (
     <section>
       <div className="banner">
@@ -19,7 +28,12 @@ function Header() {
       </div>
 
       <div className="navBar">
-        <a href="" className="navBar--menu"><FontAwesomeIcon icon="bars" /></a>
+        <button 
+          className="navBar--menu"
+          onClick = {() => handleClick()}
+          >
+          <FontAwesomeIcon icon="bars" />
+        </button>
         <a href="" className="navBar--social"><FontAwesomeIcon icon={['fab', 'facebook']} /></a>
         <a href="" className="navBar--social"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
         <a href="" className="navBar--social last-item"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>

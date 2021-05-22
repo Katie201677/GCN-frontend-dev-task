@@ -40,6 +40,8 @@
 }
 
 .navBar--menu {
+  background-color: #0A0A0A;
+  border: none;
   flex-grow: 2;
   padding-left: 10px;
   text-align: left;

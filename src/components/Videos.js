@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import YouTube from 'react-youtube';
+import "./Videos.css";
 
 function DisplayVideos() {
   const [videoArray, setVideoArray] = useState();
@@ -12,19 +13,19 @@ function DisplayVideos() {
 
   return (
     <section className="video-container">
-      <p>
+      <div className="video--thumbnail">
       {
         videoArray
         ? videoArray.map((v) => {
           return (
-            <YouTube videoId={v['_id']} />
+            <YouTube videoId={v['_id']} key={v['_id']}/>
           )
         } 
         
         )
         : 'Loading...'
       }
-      </p>
+      </div>
     </section>
   )
 }

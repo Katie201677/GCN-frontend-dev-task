@@ -1,4 +1,8 @@
 .nav--list {
+  display: none;
+}
+
+.nav--list--visible {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -18,4 +22,20 @@
   padding-left: 15px;
   padding-top: 15px;
   text-align: left;
+}
+
+.expanded {
+  padding-left: 40px;
+}
+
+.nav--list--item--plus {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+
+.plus-button {
+  background-color: #0a0a0a;
+  border: none;
+  color: white;
 }
