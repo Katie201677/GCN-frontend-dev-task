@@ -1,11 +1,14 @@
+.header {
+  position: sticky;
+  top: 0;
+}
+
 .banner {
   align-items: center;
   background-color: #C30106;
   display: flex;
   height: 40px;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
 }
 
 .banner--logo{ 

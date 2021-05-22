@@ -12,13 +12,16 @@ function DisplayVideos() {
   }, []);
 
   return (
-    <section className="video-container">
+    <section className="video--container">
       <div className="video--thumbnail">
       {
         videoArray
         ? videoArray.map((v) => {
           return (
-            <YouTube videoId={v['_id']} key={v['_id']}/>
+            <div className="video" key={v['_id']}>
+              <YouTube videoId={v['_id']} />
+              <p className="video--title">{v['title']}</p>
+            </div>
           )
         } 
         

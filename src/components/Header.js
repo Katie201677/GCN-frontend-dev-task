@@ -16,7 +16,7 @@ function Header(props) {
   }
   
   return (
-    <section>
+    <section className="header">
       <div className="banner">
         <img src={logo} className="banner--logo" alt="GCN Logo" />
         <ul className="banner--links">
@@ -34,9 +34,9 @@ function Header(props) {
           >
           <FontAwesomeIcon icon="bars" />
         </button>
-        <a href="" className="navBar--social"><FontAwesomeIcon icon={['fab', 'facebook']} /></a>
-        <a href="" className="navBar--social"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
-        <a href="" className="navBar--social last-item"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
+        <a href="https://www.globalcyclingnetwork.com/" className="navBar--social"><FontAwesomeIcon icon={['fab', 'facebook']} /></a>
+        <a href="https://www.globalcyclingnetwork.com/" className="navBar--social"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
+        <a href="https://www.globalcyclingnetwork.com/" className="navBar--social last-item"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
       </div>
     </section>
   )

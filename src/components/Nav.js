@@ -35,7 +35,6 @@ function Nav(props) {
   return(
     <nav className="nav">
       <ul className={isNavExpanded ? 'nav--list--visible' : 'nav--list'}>
-        {/* {navLayout} */}
         <li className="nav--list--item">Home</li>
         
         <li className="nav--list--item nav--list--item--plus">Videos GCN
